@@ -1,0 +1,198 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf"
+		},
+		{
+			"path" : "pico-sdk/src/rp2_common/boot_stage2/bs2_default.pdb"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"add_executable",
+			"pico_define_boot_stage2",
+			"target_link_options",
+			"pico_add_map_output",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"C:/Users/LENOVO/Downloads/GUC_312_61_34440_2023-09-22T15_41_11/OpenGL2DTemplate/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/boot_stage2/CMakeLists.txt",
+			"C:/VSARM/sdk/pico/pico-sdk/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 598,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 62,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 51,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "PICO_BOARD=\"pico\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "PICO_BUILD=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "PICO_NO_HARDWARE=0"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "PICO_ON_DEVICE=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/boot_stage2/asminclude"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/LENOVO/Desktop/blink/out/build/x64-Debug/generated/pico_base"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/boards/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/boot_stage2/include"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "bs2_default::@bc554eaed616d198a22d",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "--script=C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/boot_stage2/boot_stage2.ld",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Map=bs2_default.elf.map",
+				"role" : "flags"
+			}
+		],
+		"language" : "ASM"
+	},
+	"name" : "bs2_default",
+	"nameOnDisk" : "bs2_default.elf",
+	"paths" : 
+	{
+		"build" : "pico-sdk/src/rp2_common/boot_stage2",
+		"source" : "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/boot_stage2"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
